@@ -2,13 +2,13 @@ package com.idodevjobs.example;
 
 import ch.lambdaj.function.closure.Switcher;
 
-public class StrategyPatternGoogleGuavaSwitcherExample {
+public class StrategyPatternLambdajSwitcherExample {
 
     private Gender gender;
     private String message;
     private Switcher<GenerateGreetingStrategy> generateGreetingStrategySwitcher;
 
-    public StrategyPatternGoogleGuavaSwitcherExample (Gender gender, String message) {
+    public StrategyPatternLambdajSwitcherExample(Gender gender, String message) {
         this.gender = gender;
         this.message = message;
 
@@ -19,10 +19,10 @@ public class StrategyPatternGoogleGuavaSwitcherExample {
     }
 
     public static void main(String args[]) {
-        StrategyPatternGoogleGuavaSwitcherExample strategyPatternGoogleGuavaSwitcherExample1 = new StrategyPatternGoogleGuavaSwitcherExample(Gender.MALE, "Jack, Good morning !!");
-        StrategyPatternGoogleGuavaSwitcherExample StrategyPatternGoogleGuavaSwitcherExample2 = new StrategyPatternGoogleGuavaSwitcherExample(Gender.FEMALE, "Laura, Good afternoon !!");
-        System.out.println(strategyPatternGoogleGuavaSwitcherExample1.generateGreeting());
-        System.out.println(StrategyPatternGoogleGuavaSwitcherExample2.generateGreeting());
+        StrategyPatternLambdajSwitcherExample strategyPatternLambdajSwitcherExample1 = new StrategyPatternLambdajSwitcherExample(Gender.MALE, "Jack, Good morning !!");
+        StrategyPatternLambdajSwitcherExample strategyPatternLambdajSwitcherExample2 = new StrategyPatternLambdajSwitcherExample(Gender.FEMALE, "Laura, Good afternoon !!");
+        System.out.println(strategyPatternLambdajSwitcherExample1.generateGreeting());
+        System.out.println(strategyPatternLambdajSwitcherExample2.generateGreeting());
     }
 
     private String generateGreeting() {
